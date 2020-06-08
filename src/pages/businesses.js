@@ -4,10 +4,14 @@ import { Flex, Heading } from '@chakra-ui/core';
 import Layout from '../components/Layout';
 import BusinessFeed from '../components/Feeds/BusinessFeed';
 import Pagination from '../components/Pagination/Pagination';
+import { Helmet } from 'react-helmet';
 
 export default function Businesses() {
   return (
     <Layout>
+      <Helmet htmlAttributes={{ lang: 'en' }}>
+        <title>Businesses</title>
+      </Helmet>
       <Flex align="center" justify="center" direction="column">
         <Heading as="h1">Businesses</Heading>
         <Pagination
